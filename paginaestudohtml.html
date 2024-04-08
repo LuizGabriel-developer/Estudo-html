@@ -1,0 +1,211 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Pagina de estudo HTML</title>
+   </head>
+   <body>
+     <p>Cria um paragrafo em uma página html.</p>
+     <ol>
+        <li>A tag <img> indica para o navegador que uma imagem deve ser"renderizada" (mostrada/desenhada) naquele lugar e necessita doisatributos preenchidos: src e alt.</li>
+        <li>O primeiro é um atributo obrigatório para exibir a imagem e aponta paraa sua localização (pode ser um local do seu computador ou um endereçona Web),</li>
+        <li>O segundo é um texto alternativo que aparece caso a imagem não possaser carregada ou visualizada</li>
+        <li>O atributo alt não é obrigatório, porém é considerado um erro caso sejaomitido, pois ele provê o entendimento da imagem para pessoas comdeficiência e também auxilia na indexação da imagem para motores debusca, como o Google etc</li>
+     </ol>
+     
+     <p><b>Colocando palavras em negrito</b></p>
+
+
+     <p><i>Colocando palavras em italico</i></p>
+
+
+     <p>Quebra de<br /> linha</p>
+
+
+     <p>Ontem na aula de física eu aprendi sobre a fórmula E=MC<sup>2</sup></p>
+     <hr />
+     <p>Ontem na aula de química eu aprendi sobre o elemento H<sup>2</sup>0</p>
+
+     
+     <h1>Listas</h1>
+     <h3>Lista Ordenada</h3>
+     <ol>
+         <li>Listando receita</li>
+         <li>de</li>
+         <li>Preparo de bolo</li>
+     </ol>
+    
+
+     <h3>Lista não ordenada</h3>
+     <ul>
+         <li>Listando</li>
+         <li>de forma</li>
+         <li>Não ordenada</li>
+     </ul>
+     <h3>Links</h3>
+         <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fautopapo.uol.com.br%2Fcurta%2Fskyline-gt-r-r34-paul-walker-leiloado%2F&psig=AOvVaw2qBBwlW9Oo2xeWo5VOKc1b&ust=1712602886125000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNiIxYjlsIUDFQAAAAAdAAAAABAE">Skyline</a>
+     
+
+     <form autocomplet="on">
+         <p>
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="nome"; maxlength=3; style="width:300px;" id="nome" required />
+          </p>
+          <p>
+             <label for="email">Email:</label>
+             <input type="email" id="email" required />
+          </p>
+          <p>
+             <label for="search">Search:</label>
+             <input type="search" id="search" required />
+          </p>
+          <p>
+             <label for="url">URL:</label>
+             <input type="url" id="url" required />
+          </p>
+          <p>
+             <label for="number">Numero:</label>
+             <input type="number" id="number" required />
+          </p>
+
+          
+          <h3>Radio buton</h3>
+              <input type="radio" name="videogame" checked/> Atari
+              <input type="radio" name="videogame"/> Super nitendo <br />
+              <input type="radio" name="videogame"/> PS5
+
+
+           <h3>Checkbox</h3>
+              <input type="checkbox" name="atari" checked/> Atari
+              <input type="checkbox" name="Super_nitendo"/> Super nitendo
+
+      
+           <p>
+              <label for="date">Data:</label>
+              <input type="date" id="date">
+           </p>
+
+           <h3>Botão de submissão</h3>
+               <input type="submit" value="enviar" />
+               <input type="reset" value="reset" /><br /><br />
+           
+
+           <select>
+               <option value="html5">HTML 5</option>
+               <option value="javascript">JavaScript</option>
+           </select>
+
+           
+           <fieldset>
+               <legend>Cadastro</legend>
+               Nome: <input type="text"><br />
+               Email: <input type="email"><br />
+           </fieldset>
+     </form>
+  
+     <h3>Inserindo imagem</h3>
+     <img src="imagem/homem_aranha.png" alt="Imagem do homem aranha">
+
+
+
+
+     <h1>Inserindo tabela em HTMLl 5</h1>
+     <table border="1">
+        <tr>
+           <th>Nome</th>
+           <th>Idade</th>
+           <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Luiz Gabriel</td>
+            <td>17</td>
+            <td>Desenvolvedor mobile</td>
+        </tr>
+        <tr>
+            <td>Lui Carmelo</td>
+            <td>48</td>
+            <td>Comerciante</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>54</td>
+            <td>Comerciante</td>
+        </tr>
+      </table><br />
+
+      <table border="1">
+             <tr>
+                <th>Nome:</th>
+                <td>Renato</td>
+             </tr>
+             <tr>
+                 <th>Idade:</th>
+                 <td>44</td>
+             </tr>
+      </table><br /><br />
+
+      
+      <h1>algumas partes de uma tabela</h1>
+      <table border="1">
+        <thead><tr>
+           <th>Nome</th>
+           <th>Idade</th>
+           <th>Profissão</th>
+        </tr></thead>
+        <tbody><tr>
+            <td>Luiz Gabriel</td>
+            <td>17</td>
+            <td>Desenvolvedor mobile</td>
+        </tr>
+        <tr>
+            <td>Lui Carmelo</td>
+            <td>48</td>
+            <td>Comerciante</td>
+        </tr></tbody>
+        <tfoot><tr>
+            <td>Maria</td>
+            <td>54</td>
+            <td>Comerciante</td>
+        </tr>
+       </tfoot>
+      </table><br /><br />
+
+ 
+      <h3>Usando o colspan</h3>
+      <table border="1">
+           <tr>
+              <th>Nome</th>
+              <th colspan="2">Telefones</th>
+           </tr>
+           <tr>
+              <td>João</td>
+              <td>8888-5555</td>
+              <td>9999-9999</td>
+           </tr>
+           <tr>
+              <td>Ricardo</td>
+              <td>1111-0000</td>
+              <td>2222-2222</td>
+           </tr>
+      </table>
+
+
+      <h3>Usando o rowspan</h3>
+      <table border="1">
+        <caption><b>Tabela estudo</b></caption>
+           <tr>
+              <th>Primeiro nome:</th>
+              <td>Maria</td>
+           </tr>
+           <tr>
+              <th rowspan="2">Telefones:</th>
+              <td>8888-5555</td>
+           </tr>
+           <tr>
+              <td>1111-0000</td>
+           </tr>
+           <tr>
+              <td><input type="text" id="text"></td>
+           </tr>
+      </table>
+   </body>
+</html>
